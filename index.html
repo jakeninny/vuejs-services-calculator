@@ -16,7 +16,16 @@
     <h1>Services Calculator Test</h1>
 
     <div class="" id="app">
-      {{ message }}
+      <form class="">
+        <ul>
+          <li v-for="service in services">
+            {{service.name}}
+            <span>{{service.price | currency}}</span>
+
+          </li>
+        </ul>
+
+      </form>
     </div>
 
 
