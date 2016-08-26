@@ -18,10 +18,9 @@
     <div class="" id="app">
       <form class="">
         <ul>
-          <li v-for="service in services">
+          <li v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'service-selected' : service.active }">
             {{service.name}}
             <span>{{service.price | currency}}</span>
-
           </li>
         </ul>
 

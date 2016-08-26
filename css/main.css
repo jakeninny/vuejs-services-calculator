@@ -1,3 +1,11 @@
 html {
   font-family: PT Sans;
 }
+
+#app form ul li {
+  cursor: pointer;
+}
+
+.service-selected {
+  background-color: pink;
+}
