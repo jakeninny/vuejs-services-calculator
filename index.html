@@ -20,9 +20,14 @@
         <ul>
           <li v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'service-selected' : service.active }">
             {{service.name}}
-            <span>{{service.price | currency}}</span>
+            <!-- <span>{{service.price | currency}}</span> -->
           </li>
         </ul>
+
+        <div class="total">
+          <!-- Calculate total prices of selected services.  -->
+          <span>Total: {{calcTotal() | currency}}</span>
+        </div>
 
       </form>
     </div>

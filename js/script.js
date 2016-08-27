@@ -41,8 +41,20 @@ new Vue({
     ]
   },
   methods: {
-    toggleActive: function(s) {
-      s.active = !s.active;
+    toggleActive: function(service) {
+      service.active = !service.active;
+    },
+
+    calcTotal: function() {
+      var total = 0;
+
+      this.services.forEach(function(service){
+        if (service.active) {
+          total += service.price;
+        }
+      });
+
+      return total;
     }
 
   }
