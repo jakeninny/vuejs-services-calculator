@@ -24,17 +24,17 @@ new Vue({
         active: false
       },
       {
-        name: 'Number of site pages: 1 - 3',
+        name: 'Number of pages: 1 - 3',
         price: 400,
         active: false
       },
       {
-        name: 'Number of site pages: 4 - 6',
+        name: 'Number of pages: 4 - 6',
         price: 400,
         active: false
       },
       {
-        name: 'Number of site pages: 7 +',
+        name: 'Number of pages: 7 +',
         price: 400,
         active: false
       },

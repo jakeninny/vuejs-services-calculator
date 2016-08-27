@@ -1,9 +1,43 @@
-html {
-  font-family: PT Sans;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 PT Sans, Helvetica, Arial, sans-serif;
+
+}
+
+#app {
+  width: 50%;
+  border: 1px solid pink;
+  margin: 20px auto;
+  padding: 2%;
+  max-width: 450px;
+}
+
+#app h1 {
+  text-align: center;
 }
 
 #app form ul li {
   cursor: pointer;
+  list-style: none;
+  padding: 15px;
+  padding-left: 5%;
+}
+
+#app form ul {
+  width: 80%;
+}
+
+.total {
+  text-align: right;
+  margin-right: 20%;
+  margin-left: 40px;
+  border-top: 1px solid pink;
+  /*margin-top: 5px;*/
+  padding-top: 10px;
 }
 
 .service-selected {
